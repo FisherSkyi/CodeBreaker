@@ -19,23 +19,28 @@ struct MatchMarker: View {
     var body: some View {
         HStack {
             VStack {
-                matchmarker(peg: 0)
-                matchmarker(peg: 1)
+                matchMarker(peg: 0)
+                matchMarker(peg: 1)
             }
             VStack {
-                matchmarker(peg: 2)
-                matchmarker(peg: 3)
+                matchMarker(peg: 2)
+                matchMarker(peg: 3)
             }
         }
     }
     
-    func matchmarker(peg: Int) -> some View {
-        let exactCount: Int = matches.count(where: { match in match == .exact})
-        let foundCount: Int = matches.count(where: { match in match == .exact})
-        return   Circle()
+    @ViewBuilder
+    func matchMarker(peg: Int) -> some View {
+        // in-line closure
+        let exactCount = matches.count { $0 == .exact }
+        let foundCount = matches.count { $0 != .nomatch }
+        Circle()
+            .fill(exactCount > peg ? .primary : Color.clear)
+            .strokeBorder(foundCount > peg ? .primary : Color.clear, lineWidth: 2)
+            .aspectRatio(1, contentMode: .fit)
     }
 }
 
 #Preview {
-    MatchMarker(matches: [.exact, .exact, .exact])
+    MatchMarker(matches: [.exact, .inexact, .nomatch, .inexact])
 }

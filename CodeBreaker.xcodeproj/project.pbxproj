@@ -7,13 +7,13 @@
 	objects = {
 
 /* Begin PBXFileReference section */
-		339630C52F0571170071692C /* Assignment0.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Assignment0.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		339630C52F0571170071692C /* CodeBreaker.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CodeBreaker.app; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedRootGroup section */
-		339630C72F0571170071692C /* Assignment0 */ = {
+		339630C72F0571170071692C /* CodeBreaker */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
-			path = Assignment0;
+			path = CodeBreaker;
 			sourceTree = "<group>";
 		};
 /* End PBXFileSystemSynchronizedRootGroup section */
@@ -32,7 +32,7 @@
 		339630BC2F0571170071692C = {
 			isa = PBXGroup;
 			children = (
-				339630C72F0571170071692C /* Assignment0 */,
+				339630C72F0571170071692C /* CodeBreaker */,
 				339630C62F0571170071692C /* Products */,
 			);
 			sourceTree = "<group>";
@@ -40,7 +40,7 @@
 		339630C62F0571170071692C /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				339630C52F0571170071692C /* Assignment0.app */,
+				339630C52F0571170071692C /* CodeBreaker.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -48,9 +48,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		339630C42F0571170071692C /* Assignment0 */ = {
+		339630C42F0571170071692C /* CodeBreaker */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 339630D02F0571190071692C /* Build configuration list for PBXNativeTarget "Assignment0" */;
+			buildConfigurationList = 339630D02F0571190071692C /* Build configuration list for PBXNativeTarget "CodeBreaker" */;
 			buildPhases = (
 				339630C12F0571170071692C /* Sources */,
 				339630C22F0571170071692C /* Frameworks */,
@@ -61,13 +61,13 @@
 			dependencies = (
 			);
 			fileSystemSynchronizedGroups = (
-				339630C72F0571170071692C /* Assignment0 */,
+				339630C72F0571170071692C /* CodeBreaker */,
 			);
-			name = Assignment0;
+			name = CodeBreaker;
 			packageProductDependencies = (
 			);
 			productName = Assignment0;
-			productReference = 339630C52F0571170071692C /* Assignment0.app */;
+			productReference = 339630C52F0571170071692C /* CodeBreaker.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -85,7 +85,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 339630C02F0571170071692C /* Build configuration list for PBXProject "Assignment0" */;
+			buildConfigurationList = 339630C02F0571170071692C /* Build configuration list for PBXProject "CodeBreaker" */;
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
 			knownRegions = (
@@ -99,7 +99,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				339630C42F0571170071692C /* Assignment0 */,
+				339630C42F0571170071692C /* CodeBreaker */,
 			);
 		};
 /* End PBXProject section */
@@ -313,7 +313,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		339630C02F0571170071692C /* Build configuration list for PBXProject "Assignment0" */ = {
+		339630C02F0571170071692C /* Build configuration list for PBXProject "CodeBreaker" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				339630CE2F0571190071692C /* Debug */,
@@ -322,7 +322,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		339630D02F0571190071692C /* Build configuration list for PBXNativeTarget "Assignment0" */ = {
+		339630D02F0571190071692C /* Build configuration list for PBXNativeTarget "CodeBreaker" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				339630D12F0571190071692C /* Debug */,

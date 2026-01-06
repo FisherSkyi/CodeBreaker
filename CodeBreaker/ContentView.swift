@@ -10,9 +10,9 @@ import SwiftUI
 struct ContentView: View {
     var body: some View {
         VStack{
-            pegs(colors: [Color.red, .green, .yellow])
-            pegs(colors: [.blue, .red, .yellow])
-            pegs(colors: [.red, .green, .blue])
+            pegs(colors: [Color.red, .green, .yellow, .blue])
+            pegs(colors: [.blue, .red, .yellow, .blue])
+            pegs(colors: [.red, .green, .blue, .red])
         }
         .padding()
     }
@@ -20,10 +20,9 @@ struct ContentView: View {
     func pegs(colors: Array<Color>) -> some View {
         HStack {
             ForEach(colors.indices, id: \.self) { index in
-                RoundedRectangle(cornerRadius: 20)
-                    .aspectRatio(10/3, contentMode: .fit)
+                RoundedRectangle(cornerRadius: 10)
+                    .aspectRatio(1, contentMode: .fit)
                     .foregroundStyle(colors[index])
-                    .opacity(0.5)
             }
             MatchMarker(matches: [.exact, .inexact, .nomatch, .exact])
         }
